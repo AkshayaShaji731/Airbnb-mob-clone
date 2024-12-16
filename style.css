@@ -80,7 +80,7 @@ body{
     .header{
         display: flex;
         flex-direction: column;
-        position: sticky;
+        position:sticky;
         top: 0px;
         right: 0px;
          height: 144px;
@@ -115,7 +115,7 @@ body{
         align-items: stretch;
         box-shadow: 0 3px 10px rgba(0 0 0 / 0.1);
         border: 0.5px solid rgba(0 0 0 / 0.08);
-        min-height: 56px;
+        min-height: 54px;
         border-radius: 1000px;
         color: var(--dark-light);
     }
@@ -128,7 +128,7 @@ body{
         border: none;
         background: transparent;
         margin: 0px;
-        grid-template-columns: 52px minmax(0,1fr);
+        grid-template-columns: 42px minmax(0,1fr);
         color: inherit;
         max-width: 100%;
         height: 100%;
@@ -226,8 +226,9 @@ body{
          }
     }
     .bottom-inner{
-        margin-top: 14px;
-        margin-left: 24px;
+        margin-top: 10px;
+        padding: 0 24px;
+        margin-left: 10px;
         display: flex;
         flex: 1;
         box-sizing: border-box;
@@ -238,19 +239,23 @@ body{
         width: 100%;
     }
     .items{
-        display: flex;
+        display:inline-flex;
         flex: 1;
         flex-direction: column;
         width: 100%;
         justify-content: center;
         align-items: center;
+        min-width: 64px;
+        gap: 4px;
+        padding: 6px 0;
+        /* padding-left: 4px; */
     }
     .items img{
         width:24px;
         height: 24px;
         color: #222222;
         fill: var(--dark-light);
-        margin-bottom: 4px;
+        /* margin-bottom: 4px; */
     }
     .items span{
         line-height:1rem;
@@ -269,8 +274,8 @@ body{
         padding: 0;
     }
     .inner-main{
-        margin: 24px 0;
-        padding: 0 24px;
+        margin: 23px 0;
+        padding: 0 23px;
         box-sizing: border-box;
         display: block;
     }
@@ -279,8 +284,7 @@ body{
         flex:1;
         flex-direction: column;
         justify-content: start;
-        gap:40px 20px;
-        position: relative;
+        gap:39px 20px;
     }
     .card-1{
         display: inline-flex;
@@ -289,36 +293,42 @@ body{
         padding: 0;
         width: 100%;
         height: auto;
+        position: relative;
     }
     .card-1 img{
         display: flex;
-        width: 100%;
-        margin-bottom: 12px;
+        aspect-ratio: 20/19;
+        margin-bottom: 11px;
         border-radius: 12px;
-        height: 262px;
         border: 1px solid transparent;
         object-fit: cover;
         /* object-position: center; */
     }
-    .download-btn{
+    .download-btn-1{
         position: absolute;
-        top:10px;
-        left:217px;
-        cursor: pointer;
+        top:4%;
+        right: 4.7%;
+        cursor: pointer;    
         border-radius:50% ;
+        border: none;
+        background-color: rgba(255, 255, 255, 0.55);
+        color: rgba(255, 255, 255, 0.55);
     }
-    .download-btn img{
+    .download-btn-1 img{
         padding: 1px 1px 4px 1px;
         margin:5px 0px  2px 0;
         width:16px;
         height: 16px;
         display: block;
         /* stroke-width:3; */
+        background-color: rgba(255, 255, 255, 0.55);
     }
+   
     .p{
         display: flex;
         flex-direction: column;
-        gap: 1px;
+        gap: 2px;
+        margin-left: 1px;
     }
     .p1{
         font-weight: 500;
@@ -329,10 +339,12 @@ body{
         box-sizing:border-box;
         white-space: nowrap;
         color:var(--dark-light);
+        overflow: hidden;
+        text-overflow: ellipsis;
         font-family: "Airbnb Cereal VF", Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
     }
     .p2{
-        font-weight: 500;
+        font-weight:normal;
         line-height: 1.1875rem;
         font-size:  0.9375rem;
         text-overflow: ellipsis;
@@ -340,7 +352,135 @@ body{
         box-sizing:border-box;
         white-space: nowrap;
         color:#6A6A6A;
+        overflow: hidden;
+        text-overflow: ellipsis;
         font-family: "Airbnb Cereal VF", Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
     }
-    
+    .card-container-2{
+        display: flex;
+        flex:1;
+        flex-direction: column;
+        justify-content: start;
+        gap:39px 20px;
+        margin-bottom: 24px;
+        margin-top: 52px;
+    }
+    .card-container-2 h1{
+        font-weight: 500;
+        margin-top:0;
+        margin-bottom:-16px;
+        margin-left: 1px;
+        line-height: 2.25rem;
+        font-size: 2rem;
+        color: var(--dark-light);
+        letter-spacing: -0.02em;
+        box-sizing: border-box;
+        font-family: "Airbnb Cereal VF", Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+    }
+    .card-2{
+        display: inline-flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+    .card-2 img{
+        display: flex;
+        aspect-ratio: 20/19;
+        margin-bottom: 11px;
+        border-radius: 12px;
+        border: 1px solid transparent;
+        object-fit: cover;
+        /* object-position: center; */
+    }
+    .download2-btn-1 {
+        position: absolute;
+        top:4%;
+        right:4.7%;
+        cursor: pointer; 
+        border-radius:50% ;
+        border: none;
+    }
+         
+    .download2-btn-1 img{
+        padding: 1px 1px 4px 1px;
+        margin:5px 0px  2px 0;
+        width:16px;
+        height: 16px;
+        display: block;
+        /* stroke-width:3; */
+    }
+    .card-container-3{
+        margin: 0;
+        max-width: 1440px;
+        padding: 48px 0;
+        box-sizing: border-box;
+        display: block;
+    }
+    .inner-container-3{
+        display: block;
+    }
+    .card-container-3 h2{
+     margin-top: 0px;
+     margin-bottom: 8px;
+     font-weight: 500;
+     line-height: 1.625rem;
+     font-size: 1.375rem;
+     letter-spacing: -0.01375rem;
+     box-sizing: border-box;
+     color: var(--dark);
+    }
+    .inner-main{
+        display: block;
+    }
+    .main-top{
+        position: relative;
+        box-sizing: border-box;
+        display: flex;
+        padding: 0 12px;
+        margin: 0 -24px;
+        box-sizing: border-box;
+        white-space: nowrap;
+        overflow-x: scroll;
+        overflow-y: hidden;
+       --webkit-overflow-scrolling: touch;
+       &::-webkit-scrollbar {
+        display: none;
+     }
+    }
+    #btn-first{
+      margin:6px 6px 6px -23px;
+      border: none;
+      font-weight: 500;
+      line-height: 1.125rem;
+      font-size: 0.875rem;
+      font-family:  'Airbnb Cereal VF', 'Circular', -apple-system, 'BlinkMacSystemFont', 'Roboto', 'Helvetica Neue', sans-serif;      ;
+      padding: 10px;
+      border-radius: 8px;
+      cursor: default;
+      color: var(--dark-light);
+      letter-spacing: normal;
+      box-sizing: border-box;
+      text-align: center;
+      background: transparent;
+    }
+    .btn-slide{
+        margin:6px 6px 6px 0px;
+        border: none;
+        font-weight: 500;
+        line-height: 1.125rem;
+        font-size: 0.875rem;
+        font-family:  'Airbnb Cereal VF', 'Circular', -apple-system, 'BlinkMacSystemFont', 'Roboto', 'Helvetica Neue', sans-serif;      ;
+        padding: 10px;
+        border-radius: 8px;
+        cursor: default;
+        color: var(--dark-light);
+        letter-spacing: normal;
+        box-sizing: border-box;
+        text-align: center;
+        background: transparent;
+      }
+  
 
