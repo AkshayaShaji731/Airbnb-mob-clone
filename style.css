@@ -88,7 +88,7 @@ body{
          box-sizing: border-box ;
          background-color: var(--light);
          border-bottom:1px solid #f7f7f7 ;
-
+         box-shadow: 0 0 6px rgba(0 0 0 / 16%);
     }
     .header-top{
         box-sizing: border-box;
@@ -251,7 +251,7 @@ body{
     #f-item img{
         width: 24px;
         height: 24px;
-        opacity: 1;
+        opacity: 0.6742081447963801
     }
     #f-item span{
         box-sizing: border-box;
@@ -264,8 +264,8 @@ body{
         color:#646464; 
     }
     #f-icon{
-        margin-top:1px;
-        margin-left:2px;
+        margin-top:7px;
+        margin-left:4px;
         display: flex;
         flex-direction: column;
         gap: 4px;
@@ -297,11 +297,13 @@ body{
         width: 30px;
         height: 2px;
         box-sizing: border-box;
-        margin-left:146px;
+        margin-left:145px;
+        display: block;
+        box-shadow:rgb(0 0 0 / 16%) 0 0 6px;
     }
     .items{
         margin-top:8px;
-        margin-left: 1px;
+        margin-left: 0px;
         display: flex;
         flex-direction: column;
         gap: 4px;
@@ -313,6 +315,7 @@ body{
         width: 24px;
         height: 24px;
         /* margin-bottom: 4px; */
+        opacity: 0.6742081447963801;
      }
      .items span{
      box-sizing: border-box;
