@@ -291,7 +291,7 @@ body{
         background-color: var(--dark);
         opacity: 1;
         position: absolute;
-        bottom: 0;
+        bottom: -1px;
         inset-inline: 0;
         content:  '';
         width: 30px;
@@ -299,7 +299,6 @@ body{
         box-sizing: border-box;
         margin-left:145px;
         display: block;
-        box-shadow:rgb(0 0 0 / 16%) 0 0 6px;
     }
     .items{
         margin-top:8px;
@@ -365,13 +364,12 @@ body{
     }
     .download-btn-1{
         position: absolute;
-        top:4%;
-        right: 4.7%;
+        top:13px;
+        right: 13px;
         cursor: pointer;    
         border-radius:50% ;
         border: none;
-        background-color: rgba(255, 255, 255, 82%);
-        color: rgba(255, 255, 255,80%);
+        background-color: rgba(255, 255, 255,0.8);
     }
     .download-btn-1 img{
         padding: 1px 1px 4px 1px;
@@ -380,7 +378,9 @@ body{
         height: 16px;
         display: block;
         /* stroke-width:3; */
-        color:rgba(255, 255, 255, 82%) ;
+        /* color:rgba(255, 255, 255,0.6) ; */
+        opacity: 0.6742081447963801;
+
     }
    
     .p{
@@ -456,11 +456,12 @@ body{
     }
     .download2-btn-1 {
         position: absolute;
-        top:4%;
-        right:4.7%;
+        top:13px;
+        right:13px;
         cursor: pointer; 
         border-radius:50% ;
         border: none;
+        background-color: rgba(255, 255, 255,0.8);
     }
          
     .download2-btn-1 img{
@@ -470,6 +471,8 @@ body{
         height: 16px;
         display: block;
         /* stroke-width:3; */
+        opacity: 0.6742081447963801;
+
     }
     .card-container-3{
         display: block;
@@ -514,6 +517,7 @@ body{
         padding: 48px 24px 25px 24px;
         box-sizing: border-box;
         display: block;
+        background-color: #f7f7f7;
         border-bottom: 1px solid var(--light-dark); 
     }
     .inner-container-1{
@@ -535,22 +539,25 @@ body{
     .main-top{
         position: relative;
         box-sizing: border-box;
-        display: flex;
-        border-bottom: 1px solid var(--light-dark);
-        padding: 0 12px;
-        margin: -15px -22px;
+        display: block;
         box-sizing: border-box;
         white-space: nowrap;
+    }
+    .main-top-inner{
+        display: flex;
+        padding: 0 14px;
+        margin: -15px -22px;
+        border-bottom: 1px solid var(--light-dark);
         overflow-x: scroll;
         overflow-y: hidden;
        --webkit-overflow-scrolling: touch;
        &::-webkit-scrollbar {
         display: none;
      }
-        
     }
+
     #btn-first{
-      margin:6px 6px 6px -23px;
+      margin:6px 6px 6px -25px;
       border: none;
       font-weight: 500;
       line-height: 1.125rem;
@@ -565,16 +572,18 @@ body{
       text-align: center;
       background: transparent;
     }
-    #btn-first::after{
+    .main-top-inner::after{
         background-color: var(--dark);
         opacity: 1;
         position: absolute;
-        bottom: 0;
+        bottom: 1px;
         inset-inline: 0;
         content:  '';
-        width: 18%;
+        width: 50px;
+        margin-left: -23px;
         height: 2px;
         box-sizing: border-box;
+        display: block;
     }
     .btn-slide{
         margin:6px 6px 6px 0px;
@@ -601,22 +610,26 @@ body{
         background: transparent;
         padding: 0;
         position: absolute;
-        top: 1px;
-        right: -6px;
+        top: 0px;
+        right: -9px;
         color: var(--dark-light);
         width: 36px;
         height: 50px;
         cursor: pointer;
+        padding: 0 14px;
+        margin: 1px -40px;
         /* box-shadow:1px 1px 1px 1px darkblue; */
       }
      #next img{
         display: block;
-        height: 16px;
-        width: 16px;
+        height: 14px;
+        width: 14px;
             /* stroke: currentcolor;
             stroke-width: 3; */
-        color: #646464;;
-        fill: #6A6A6A;
+        color: #222222;
+        opacity:0.8;
+
+        fill:#222222;
         align-items: center;
      }
    .main-bottom{
@@ -700,6 +713,7 @@ body{
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
+    background-color: #f7f7f7;
 }
 .container-2 h3{
     margin-bottom: 12px;
@@ -729,7 +743,7 @@ body{
     background: transparent;
 }
 .con{
-    margin-bottom: -2px;
+    margin-bottom: 0;
 }
 .con-div-1{
     padding: 24px 0;
@@ -739,7 +753,7 @@ body{
 .con-div-2{
     padding: 24px 0;
     border-bottom: 1px solid var(--light-dark);
-    margin-top: 1px;
+    margin-top: 2px;
 }
 .con-div-3{
     padding: 24px 0;
@@ -747,7 +761,7 @@ body{
     margin-top: 1px;
 }
 footer{
-    padding: 25px 0 0 0;
+    padding: 23px 0 0 0;
     box-sizing: border-box;
     display: block;
     /* margin-bottom:65px; */
@@ -800,6 +814,7 @@ footer button{
 .footer-2{
     box-sizing: border-box;
     display: block;
+    margin-bottom: 65px;
 }
 .f-div1{
     font-size: 0.875rem;
@@ -820,6 +835,7 @@ footer button{
     padding: 0;
     display: flex;
     list-style: none;
+    margin-right: 2px;
 }
 .f-div2 ol a{
     font-family:  'Airbnb Cereal VF', 'Circular', -apple-system, 'BlinkMacSystemFont', 'Roboto', 'Helvetica Neue', sans-serif;
@@ -829,14 +845,17 @@ footer button{
     font-size: 0.875rem;
     line-height: 1.125rem;
     font-weight:400;
-    margin-right: 4px;
+    /* margin-right: 4px; */
+    margin-right:-3px;
 }
 .f-div2 span{
     display: inline-block;
-    text-align: center;
-    width: 7px;
+    text-align:center;
+    width:19px;
     font-size: 0.875rem;
     line-height: 1.125rem;
+    
+    
 }
  .f-div2 .inner-div a{
     font-family:  'Airbnb Cereal VF', 'Circular', -apple-system, 'BlinkMacSystemFont', 'Roboto', 'Helvetica Neue', sans-serif;
@@ -846,4 +865,17 @@ footer button{
     font-size: 0.875rem;
     line-height: 1.125rem;
     font-weight:400;
+}
+@media screen and (min-width:375px) {
+   .top-main{
+    margin-inline-end:24px;
+    margin-inline-start:24px;
+   } 
+   .btn{
+    padding-inline-start: 9px;
+   }
+   .btn-2{
+    padding-left: 7px;
+   }
+    
 }
