@@ -420,7 +420,6 @@ body{
         flex:1;
         flex-direction: column;
         justify-content: start;
-        gap:39px 20px;
         margin-bottom: 24px;
         margin-top: 52px;
     }
@@ -435,6 +434,13 @@ body{
         letter-spacing: -0.02em;
         box-sizing: border-box;
         font-family: "Airbnb Cereal VF", Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+    }
+    .card-container-body{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap:39px 20px;
+        margin-top: 39px;
     }
     .card-2{
         display: inline-flex;
