@@ -519,6 +519,7 @@ body{
         display: block;
         background-color: #f7f7f7;
         border-bottom: 1px solid var(--light-dark); 
+        overflow:hidden;
     }
     .inner-container-1{
         display: block;
@@ -743,7 +744,7 @@ body{
     background: transparent;
 }
 .con{
-    margin-bottom: 0;
+    margin-bottom: -1px;
 }
 .con-div-1{
     padding: 24px 0;
@@ -753,7 +754,7 @@ body{
 .con-div-2{
     padding: 24px 0;
     border-bottom: 1px solid var(--light-dark);
-    margin-top: 2px;
+    margin-top: 1px;
 }
 .con-div-3{
     padding: 24px 0;
@@ -761,7 +762,7 @@ body{
     margin-top: 1px;
 }
 footer{
-    padding: 23px 0 0 0;
+    padding: 24px 0 0 0;
     box-sizing: border-box;
     display: block;
     /* margin-bottom:65px; */
@@ -814,7 +815,7 @@ footer button{
 .footer-2{
     box-sizing: border-box;
     display: block;
-    margin-bottom: 65px;
+    /* margin-bottom: 64px; */
 }
 .f-div1{
     font-size: 0.875rem;
@@ -830,12 +831,16 @@ footer button{
     display: inline-block;
     box-sizing: border-box;
 }
+.f-div2-inner{
+    display: flex;
+    flex-direction:column;
+}
 .f-div2 ol{
     margin: 0;
     padding: 0;
-    display: flex;
+    display:flex;
+    /* grid-template-columns: repeat(4,1fr); */
     list-style: none;
-    margin-right: 2px;
 }
 .f-div2 ol a{
     font-family:  'Airbnb Cereal VF', 'Circular', -apple-system, 'BlinkMacSystemFont', 'Roboto', 'Helvetica Neue', sans-serif;
@@ -845,7 +850,6 @@ footer button{
     font-size: 0.875rem;
     line-height: 1.125rem;
     font-weight:400;
-    /* margin-right: 4px; */
     margin-right:-3px;
 }
 .f-div2 span{
@@ -866,6 +870,13 @@ footer button{
     line-height: 1.125rem;
     font-weight:400;
 }
+.fixed{
+    display: block;
+    width: 100%;
+    height: 64px;
+    margin: 0;
+    padding: 0;
+}
 @media screen and (min-width:375px) {
    .top-main{
     margin-inline-end:24px;
@@ -877,5 +888,9 @@ footer button{
    .btn-2{
     padding-left: 7px;
    }
-    
+   .f-div2-inner{
+    display: flex;
+    flex-direction:row;
+}  
+   
 }
