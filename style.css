@@ -78,7 +78,7 @@ body{
         padding:0;
         
     }
-    .header-main{
+    .header1-main{
         display: flex;
         flex-direction: column;
         position:fixed;
@@ -92,7 +92,7 @@ body{
          box-shadow: 0 0 6px rgba(0 0 0 / 16%);
          width: 100%;
     }
-    .header-top{
+    .header1-top{
         box-sizing: border-box;
         display: contents; 
     }
@@ -328,6 +328,439 @@ body{
      font-family: "Airbnb Cereal VF", Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
      color:#646464;
      }
+     /* ---------header-1----------------- */
+     /* ---------header-2----------------- */
+     .header-2{
+        display: none;
+        box-sizing: border-box;
+        position:fixed;
+        z-index: 100;
+        top: 0;
+        right: 0;
+        width: 100%;
+        background-color: var(--light);
+     }
+     .header2-toptgroup::after{
+        background: var(--light);
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        content: '';
+        top: 0;
+        opacity: 1;
+        box-sizing: border-box;
+        box-shadow: rgb(0 0 0 / 8%) 0 1px 0;
+     }
+     .header2-top{
+        padding: 0 40px 0 40px;
+        margin: 0 auto;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 100%;
+        width: 100%;
+        z-index: 1;
+        max-width: 1814px;
+        box-sizing: border-box;
+        overflow: hidden;
+     }
+     .logo{
+        flex: 0 0 auto;
+        display: block;
+        box-sizing: border-box;
+     }
+     .logo a{
+        display: inline-flex;
+        align-items: center;
+        position: relative;
+        z-index: 1;
+        height: 80px;
+        text-decoration: none;
+        color: var(--theme-color);
+        box-sizing: border-box;
+     }
+     .logo-img svg{
+       display: block;
+       width:30px;
+       height: 32px;
+     }
+     .search2{
+        display: block;
+        flex: 0 1 auto;
+        text-align: center;
+        padding: 0 24px;
+        box-sizing: border-box;
+        max-width: 358px;
+       
+    }
+    .search-inner2{
+        margin: 0 auto;
+        text-align: left;
+        width:100%;
+        display: inline-block;
+    }
+    .search-main2{
+        background-color:var(--light);
+        display: inline-flex;
+        align-items: center;
+        border-radius: 40px;
+        text-align: left;
+        border: 1px solid var(--light-dark);
+        max-width: 100%;
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08), 0 4px 12px rgba(0, 0, 0, 0.05);
+        color: var(--dark-light);
+        box-sizing: border-box;
+        
+    }
+    .btn2-1{
+        padding-left: 8px;
+        padding-right: 0;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        border-radius:4px;
+        background: transparent;
+        border: 1px solid transparent;
+        margin: -1px;
+        color: inherit;
+        z-index: 1;
+        height: 48px;
+        flex: 0 1 auto;
+        box-sizing: border-box;
+        text-overflow: ellipsis;
+
+    }
+    .inner-btn2-1{
+        font-weight: 500;
+        font-size: 0.875rem;
+        padding:0 16px;
+        line-height: 1.375rem;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        flex: 1 1 auto;
+        min-width: 80px;
+        box-sizing: border-box;
+        display: block;
+        font-family:"Airbnb Cereal VF", Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+    }
+    .space2-btn{
+        background-color:var(--light-dark);
+        height: 24px;
+        width:1px;
+        flex: 0 0 1px;
+        box-sizing: border-box;
+        color: var(--dark-light); 
+        text-align: left;
+    }
+    .btn2-2,.btn2-3{
+        padding: 0;
+        align-items: center; 
+        cursor:pointer;
+        border-radius:4px;
+        background-color: transparent;
+        margin: -1px;
+        color: inherit;
+        position: relative;
+        height: 48px;
+        border: 1px solid transparent;
+        box-sizing: border-box;
+        flex: 0 1 auto; 
+        display: flex;
+        /* padding-block: 1px;
+        padding-inline: 6px; */
+    }
+    .inner-btn2-3-left{
+        font-weight: 400;
+        color: #6A6A6A;
+        font-size: 0.875rem;
+        padding:0 16px;
+        line-height: 1.375rem;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        flex: 1 1 auto;
+        min-width: 80px;
+        box-sizing: border-box;
+        display: block;
+        font-family:"Airbnb Cereal VF", Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+    } 
+     .inner-btn2-3-right{
+        background-color: var(--theme-color);
+        border-radius:50%;
+        padding: 10px;
+        margin: 7px 7px 7px 0;
+        color: var(--light);
+        height: 32px;
+        width: 32px;
+        box-sizing: border-box;
+        display: block;
+        cursor: pointer; 
+     } 
+     .inner-btn2-3-right img{
+        width: 12px;
+        height: 12px;
+        display: block;
+        color: var(--light);
+     }
+     .account{
+        flex: 1 0 auto;
+        box-sizing: border-box;
+        display: block;
+     }
+     .nav{
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;height: 80px;
+        box-sizing: border-box;
+        margin: 0;
+        padding:0;
+        width: 100%;
+        max-width: 100%;
+     }
+     .nav-left{
+        display: flex;
+        flex: 1 1 auto;
+        justify-content:flex-end;
+        margin-right:8px;
+        box-sizing: border-box;
+     }
+     .nav-left a{
+        cursor: pointer;
+        border: 0;
+        margin: 0;
+        background: transparent;
+        text-decoration: none;
+        padding: 12px;
+        white-space: nowrap;
+        position: relative;
+        z-index: 1;
+        display: inline-block;
+        color: var(--dark-light);
+        overflow: visible;
+     }
+     .nav-content{
+        display: flex;
+        align-items: center;
+        height: 100%;
+        z-index: 1;
+        box-sizing: border-box;
+        cursor: pointer;
+        font-weight: 500;
+        line-height: 1.125rem;
+        font-size: 0.875rem;
+        white-space: nowrap;
+        color: var(--dark-light);
+     }
+     .nav-left-icon{
+        position: relative;
+        display: inline-block;
+        margin: auto 0;
+        box-sizing: border-box;
+     }
+     .nav-left-btn{
+        cursor: pointer;
+        border: 0;
+        margin: 0;
+        background: transparent;
+        padding: 12px;
+        white-space: nowrap;
+        display: inline-block;
+        color: var(--dark-light);
+        box-sizing: border-box;
+        overflow: visible;
+
+     }
+     .nav-btn{
+        display: flex;
+        height: 18px;
+        align-items: center;
+        position: relative;
+        z-index: 1;
+        box-sizing: border-box;
+        cursor: pointer;
+     }
+     .nav-btn svg{
+        display: block;
+        width: 16px;
+        height: 16px;
+        overflow: hidden;
+     }
+     .nav-right{
+        display: block;
+        box-sizing: border-box;
+     }
+     .nav-right-inner{
+        display: inline;
+        position: relative;
+        box-sizing: border-box;
+
+     }
+     .nav-right-btn{
+        background-color: var(--light);
+        display: inline-flex;
+        align-items: center;
+        cursor: pointer;
+        margin: 0;
+        border: 1px solid var(--light-dark);
+        background: transparent;
+        padding: 8px 8px 8px 14px;
+        border-radius: 30px;
+        position:relative;
+        z-index: 1;
+        color: var(--dark-light);
+        height: 48px;
+        box-sizing: border-box;
+        overflow: visible;
+     }
+     .burger{
+        display: block;
+        box-sizing: border-box;
+     }
+     .burger svg{
+        display: block;
+        height: 16px;
+        width: 16px;
+        box-sizing: border-box;
+        color: var(--dark-light);
+        overflow: visible;
+     }
+     .acc{
+        margin-left: 14px;
+        overflow: hidden;
+        position: relative;
+        z-index: 1;
+        color: #6A6A6A;
+        width: 32px;
+        height: 32px;
+        flex: 0 0 32px;
+        box-sizing: border-box;
+        display: block;
+     }
+     .acc svg{
+        display: block;
+        width: 100%;
+        height: 100%;
+        fill: currentColor;
+        color: #6A6A6A;
+        overflow: hidden;
+     }
+     .header2-bottom{
+        margin: 0;
+        display: block;
+        height: 100%;
+        min-width: 0;
+        overflow-y: hidden;
+        --webkit-overflow-scrolling: touch;
+        &::-webkit-scrollbar {
+            display: none;
+         }
+     }
+     .bottom2-inner{
+        padding: 0 24px;
+        margin: 0;
+        display:flex;
+        justify-content: flex-start;
+        gap: 16px;
+        box-sizing: border-box;
+        width: 100%;
+     }
+     .container2-items{
+        display:flex;
+        width: max-content;
+        padding: 4px 0;
+        margin-top:12px 0 10px;
+        gap: 16px;
+        /* min-width: 36px; */
+     }
+    #f-item2{
+        margin-top:8px;
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        min-width: 64px; 
+        justify-content: center;
+        align-items: center; 
+    }
+    #f-item2 img{
+        width: 24px;
+        height: 24px;
+        opacity: 0.6742081447963801
+    }
+    #f-item2 span{
+        box-sizing: border-box;
+        white-space: nowrap;
+        text-align: center;
+        font-size: 0.75rem;
+        font-weight: 500;
+        line-height: 1rem;
+        font-family: "Airbnb Cereal VF", Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+        color:#646464; 
+    }
+    #f-icon2{
+        margin-top:7px;
+        margin-left:4px;
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        min-width: 64px; 
+        justify-content: center;
+        align-items: center;  
+    }
+    #f-icon2 img{
+        width: 24px;
+        height: 24px;
+    }
+    #f-icon2 span{
+     box-sizing: border-box;
+     white-space: nowrap;
+     text-align: center;
+     font-size: 0.75rem;
+     font-weight: 500;
+     line-height: 1rem;
+     font-family: "Airbnb Cereal VF", Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+     color:var(--dark);
+    }
+    #f-icon2::after{
+        background-color: var(--dark);
+        opacity: 1;
+        position: absolute;
+        bottom: -1px;
+        inset-inline: 0;
+        content:  '';
+        width: 30px;
+        height: 2px;
+        box-sizing: border-box;
+        margin-left:185px;
+        display: block;
+    }
+    .items2{
+        margin-top:8px;
+        margin-left: 0px;
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        min-width: 64px; 
+        justify-content: center;
+        align-items: center;   
+    }
+     .items2 img{
+        width: 24px;
+        height: 24px;
+        /* margin-bottom: 4px; */
+        opacity: 0.6742081447963801;
+     }
+     .items2 span{
+     box-sizing: border-box;
+     white-space: nowrap;
+     text-align: center;
+     font-size: 0.75rem;
+     font-weight: 500;
+     line-height: 1rem;
+     font-family: "Airbnb Cereal VF", Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+     color:#646464;
+     }
+     /* header end */
     .main{
         display: block;
         margin-top: 167px;
@@ -914,5 +1347,33 @@ footer button{
     {
         width:47.8%;
     }
-    
+ }
+ @media screen and (min-width:744px) {
+    .header1-main{
+        display: none;
+    }
+    .header-2{
+        display: block;
+    }
+    .inner-main{
+        padding: 0 40px;
+    }
+    .header2-bottom{
+        padding: 0 40px;
+    }
+    .card-1{
+        width:48.5%
+    }
+    .card-container-body{
+        gap: 39px 22px;
+    }
+    .card-2{
+        width:48%   
+    }
+    .container-2{
+        padding: 0 40px;
+    }
+    .container-1 h2{
+        margin-left: 16px;
+    }
  }
