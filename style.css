@@ -1610,10 +1610,6 @@ footer button{
         grid-template-columns: repeat(3,1fr);
 
     }
-    .con-div-2{
-        margin-left: 3px;
-    }
-    .con-div-3{
-        margin-left: 6px;
-    }
+   
+    
 }
