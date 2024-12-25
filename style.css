@@ -1610,6 +1610,30 @@ footer button{
         grid-template-columns: repeat(3,1fr);
 
     }
-   
-    
+    .con-div-2{
+        margin-left: 3px;
+    }
+    .con-div-3{
+        margin-left: 6px;
+    }
+}
+@media screen and (min-width:1128px) {
+    .card-1{
+        width: 23.5%;
+    }
+    .card-2{
+      width: 23.4%;
+    }
+    #inspire-2{  
+        display:grid;
+    }
+     #inspire-2 .span-top3{
+        display: block;
+    }
+    .span-bottom3{
+        display: block;
+    }
+    .main-bottom ul{
+        grid-template-columns: repeat(6,minmax(0,1fr));
+    }
 }
