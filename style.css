@@ -2,7 +2,7 @@
 body{
     font-family: Airbnb Cereal VF, Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
     font-size: 0.875rem;
-    line-height: 1.43;
+    line-height: 1.43rem;
     color: #222222;
     background-color: #fff;
     margin: 0;
@@ -213,6 +213,7 @@ body{
         display: inline-flex;
         font-family: inherit;
     }
+
      .header-bottom{
         margin: 0;
         display: block;
@@ -806,7 +807,7 @@ body{
      /* header end */
     .main{
         display: block;
-        margin-top: 173px;
+        margin-top: 167px;
         padding: 0;
     }
     .inner-main{
@@ -998,12 +999,13 @@ body{
     .container-1{
         margin-inline-end: auto;
         max-width: 1440px;
-        padding: 48px 24px 25px 24px;
+        padding: 48px 24px 24px 24px;
         box-sizing: border-box;
         display: block;
         background-color: #f7f7f7;
         border-bottom: 1px solid var(--light-dark); 
         overflow:hidden;
+        margin-bottom: -1px;
     }
     .inner-container-1{
         display: block;
@@ -1012,8 +1014,7 @@ body{
      margin-top: 8px;
      /* margin-bottom: 8px; */
      font-weight: 500;
-     line-height: 1.62;
-     padding: 48px 24px 25px 24px;
+     line-height: 1.625rem;
      font-size: 1.375rem;
      letter-spacing: -0.01375rem;
      box-sizing: border-box;
@@ -1159,6 +1160,10 @@ body{
         color:#6A6A6A;
         box-sizing: border-box;     
 }
+#inspire-1{
+    /* visibility: hidden; */
+    display: none;
+}
 .span-top2{
     font-weight:500;
     text-overflow: ellipsis;
@@ -1166,8 +1171,31 @@ body{
     color: var(--dark-light);
     box-sizing: border-box;
     display: none;
+    /* visibility: hidden; */
 }
+
 .span-bottom2{
+        font-weight:normal;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        color:#6A6A6A;
+        box-sizing: border-box;  
+        display: none;   
+}
+#inspire-2{
+    display: none;
+}
+.span-top3{
+    font-weight:500;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: var(--dark-light);
+    box-sizing: border-box;
+    display: none;
+    /* visibility: hidden; */
+}
+
+.span-bottom3{
         font-weight:normal;
         text-overflow: ellipsis;
         white-space: nowrap;
@@ -1188,7 +1216,7 @@ body{
     color: var(--dark-light);
     gap: 4px;
     width: auto;  
-    margin-top:-60px;
+    margin-top:0px;
     margin-right:-100px;
 }
 .show span{
@@ -1471,7 +1499,7 @@ footer button{
         padding: 0 40px;
     }
     .container-1 h2{
-        margin-left: 16px;
+        margin-left: 0px;
     }
     .footer-1{
         display: flex;
@@ -1512,6 +1540,9 @@ footer button{
     .footer-1{
         margin-bottom: 15px;
     }
+    #inspire-1{
+        display: inline;
+    }
     .span-top2{
        display:inline;
     }
@@ -1525,7 +1556,7 @@ footer button{
         margin-bottom: 0px;
     }
     .container-1{
-        padding: 40px 24px 25px 24px;
+        padding: 0px 24px 25px 24px;
     }
  }
 @media screen and (min-width:787px) {
@@ -1546,4 +1577,43 @@ footer button{
     .inner-btn2-3-right{
         margin-left: 0px;
     }
+    
     } 
+@media screen and (min-width:950px) {
+    .logo{
+        flex: 1 0 140px;
+    }
+    .search2{
+        flex: 0 1 auto;
+    }
+    .account{
+         flex: 1 0 140px;   
+    }
+    .card-1{
+    width: 31.7%;
+    }
+    .card-2{
+        width: 31.6%;
+    }
+    .container-2{
+        display: flex;
+        flex-direction:column;
+    }
+    #next{
+        display: none;
+    }
+    .main-bottom ul{
+        grid-template-columns: repeat(3,minmax(0,1fr));
+    }
+    .con{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+
+    }
+    .con-div-2{
+        margin-left: 3px;
+    }
+    .con-div-3{
+        margin-left: 6px;
+    }
+}
