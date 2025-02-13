@@ -1501,6 +1501,7 @@ footer{
     }
     .footer-1{
         display: flex;
+        gap: 26px;
     }
     .footer-2{
         margin-left: -1px;
@@ -1741,6 +1742,8 @@ footer{
         }
         .container-2{
             padding-inline: 81px;
+            /* max-width: 1440px;
+            margin-inline: 0; */
         }
         .main{
             padding-inline: 40px;
@@ -1776,7 +1779,29 @@ footer{
         .bottom-inner{
             padding-inline: 80px 120px;
         }
-        
+        /* .inner-container-1{
+            max-width: 1157px;
+            margin-inline: auto;
+        }
+        .cont{
+            margin-inline:306.5px;
+        }
+        .cont-div-f{
+            margin-inline: 306.5px;
+        } */
+        .Container{
+            display: block;
+            width: 100%;
+            background:#f7f7f7;
+        }
+        .container-1{
+            max-width: 1292px;
+            margin-inline: auto;
+        }
+        .container-2{
+            max-width: 1292px;
+            margin-inline: auto;
+        }
     }
     /* .................hover................ */
     .items img:hover, span:hover{
