@@ -1591,8 +1591,8 @@ footer{
     .space2-btn2{
         margin-left: 0;
     }
-    .btn-2-1 ,.btn2-2{
-        padding: 0;
+    .btn2-1 , .btn2-2{
+        padding-right: 0;
     }
     .inner-btn2-3-left{
         max-width: none;
