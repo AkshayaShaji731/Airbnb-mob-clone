@@ -1563,7 +1563,7 @@ footer{
         margin-top: 2px;
     }
 }
-/* @media screen and (min-width:768px) {
+@media screen and (min-width:768px) {
     .search2{
         max-width: 382px;
     }
@@ -1579,7 +1579,7 @@ footer{
     .inner-btn2-3-right{
         margin-left: 0px;
     }
-} */
+}
 @media screen and (min-width:787px) {
     .search2{
         max-width: none;
@@ -1590,6 +1590,9 @@ footer{
     }
     .space2-btn2{
         margin-left: 0;
+    }
+    .btn-2-1 ,.btn2-2{
+        padding: 0;
     }
     .inner-btn2-3-left{
         max-width: none;
